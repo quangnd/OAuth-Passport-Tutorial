@@ -1,0 +1,22 @@
+{
+  "name": "oauth-passport-tutorial",
+  "description": "",
+  "main": "",
+  "authors": [
+    "quangnd"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.6.3",
+    "bootstrap": "^3.3.7"
+  }
+}
