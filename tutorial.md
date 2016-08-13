@@ -54,4 +54,5 @@ Use express-generator to generate App
   - 
 3. Twitter integration
   - Install module: passport-twitter (see twitter.strategy.js)
+  - **Note**: If callbackURL is not assigned clearly, your app will use Callback url that declared in dev.twitter.com)
 4. Facebook integration
