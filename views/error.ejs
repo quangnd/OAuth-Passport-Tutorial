@@ -1,6 +1,21 @@
-extends layout
 
-block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+<html>
+
+<head>
+   <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+
+<body>
+  <div>
+   Error  <%=error.stack%>
+     
+  </div>
+
+</body>
+
+</html>

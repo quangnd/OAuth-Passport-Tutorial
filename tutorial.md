@@ -32,7 +32,7 @@ Use express-generator to generate App
   - Setting up your app at console.developers.google.com (create new project, get credentials...);
   - Enables Google+ API, Contacts API.
 
-3. Google OAuth strategy
+3. Google OAuth strategy (see google.strategy.js)
   - var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 
   `passport.use(new GoogleStrategy({
@@ -49,6 +49,9 @@ Use express-generator to generate App
 
 ## Adding in more providers
 1. Code structure
+  - Create new config folder that contains passport config
 2. Use passport to secure routes
+  - 
 3. Twitter integration
+  - Install module: passport-twitter (see twitter.strategy.js)
 4. Facebook integration
