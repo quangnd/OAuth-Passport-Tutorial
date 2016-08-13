@@ -1,2 +1,4 @@
 node_modules
 public/lib
+npm-debug.log
+jsonconfig.json

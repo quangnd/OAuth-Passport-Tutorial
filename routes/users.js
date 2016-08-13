@@ -11,11 +11,7 @@ router.use('/', function (req, res, next) {
 
 router.get('/', function (req, res, next) {
   res.render('users', {
-    user: {
-      name: req.user.displayName,
-      image: req.user.image,
-      profile: req.user.profile
-    }
+    user: req.user
   });
 });
 

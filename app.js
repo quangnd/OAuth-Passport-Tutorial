@@ -6,24 +6,13 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var passport = require('passport');
 var session = require('express-session');
+var mongoose = require('mongoose');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var auth = require('./routes/auth');
 
 var app = express();
-
-var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
-
-passport.use(new GoogleStrategy({
-  clientID: '358160442875-m0802l6ind6lmkvife4kc7hmhl88rl7a.apps.googleusercontent.com',
-  clientSecret: '8oTkQKOaxnYPUmIt-wOlRpD-',
-  callbackURL: 'http://localhost:3000/auth/google/callback'
-},
-  function (req, accessToken, refreshToken, profile, done) {
-    done(null, profile);
-  }
-));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -47,6 +36,8 @@ require('./config/passport')(app);
 app.use('/', routes);
 app.use('/users', users);
 app.use('/auth', auth);
+
+var db = mongoose.connect('mongodb://localhost:27017/OAuthDemo');
 
 /// catch 404 and forwarding to error handler
 app.use(function (req, res, next) {

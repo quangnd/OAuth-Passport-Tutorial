@@ -65,3 +65,6 @@ Use express-generator to generate App
       5 - Enter your URL (localhost works here).
 5. Github integration (https://github.com/settings/applications/new)
   - Install module: passport-github 
+
+## Calling OAuth Providers 
+  - Save user to MongoDB
