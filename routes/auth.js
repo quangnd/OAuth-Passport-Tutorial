@@ -33,4 +33,13 @@ router.route('/facebook/callback')
         failureRedirect: '/error'
     }));
 
+router.route('/github/callback')
+    .get(passport.authenticate('github', {
+        successRedirect: '/users/',
+        failureRedirect: '/error'
+    }));
+
+router.route('/github')
+    .get(passport.authenticate('github'));
+
 module.exports = router;

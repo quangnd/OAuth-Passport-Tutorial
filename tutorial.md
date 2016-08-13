@@ -56,10 +56,12 @@ Use express-generator to generate App
   - Install module: passport-twitter (see twitter.strategy.js)
   - **Note**: If callbackURL is not assigned clearly, your app will use Callback url that declared in dev.twitter.com)
 4. Facebook integration (http://developers.facebook.com)
-  - Install module: passport-facebook (see faceboko.strategy.js)
+  - Install module: passport-facebook (see facebook.strategy.js)
   - **Note**: If error occured, try follow:
       1 - Click Apps and then select your app.
       2 - Click the Settings button on the left side of the screen.
       3 - In the Basic settings, click the Add Platform button below the settings configuration.
       4 - Select Website in the platform dialog.
       5 - Enter your URL (localhost works here).
+5. Github integration (https://github.com/settings/applications/new)
+  - Install module: passport-github 
