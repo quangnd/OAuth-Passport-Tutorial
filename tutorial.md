@@ -28,7 +28,7 @@ Use express-generator to generate App
 1. Passport middleware?
   - Install modules: passport express-session passport-google-oauth
   - Config passport with passport module
-2. Google console
+2. Google console (https://console.developers.google.com)
   - Setting up your app at console.developers.google.com (create new project, get credentials...);
   - Enables Google+ API, Contacts API.
 
@@ -52,7 +52,14 @@ Use express-generator to generate App
   - Create new config folder that contains passport config
 2. Use passport to secure routes
   - 
-3. Twitter integration
+3. Twitter integration (https://apps.twitter.com)
   - Install module: passport-twitter (see twitter.strategy.js)
   - **Note**: If callbackURL is not assigned clearly, your app will use Callback url that declared in dev.twitter.com)
-4. Facebook integration
+4. Facebook integration (http://developers.facebook.com)
+  - Install module: passport-facebook (see faceboko.strategy.js)
+  - **Note**: If error occured, try follow:
+      1 - Click Apps and then select your app.
+      2 - Click the Settings button on the left side of the screen.
+      3 - In the Basic settings, click the Add Platform button below the settings configuration.
+      4 - Select Website in the platform dialog.
+      5 - Enter your URL (localhost works here).

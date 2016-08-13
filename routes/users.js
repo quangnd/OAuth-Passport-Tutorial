@@ -13,7 +13,8 @@ router.get('/', function (req, res, next) {
   res.render('users', {
     user: {
       name: req.user.displayName,
-      image: req.user.image
+      image: req.user.image,
+      profile: req.user.profile
     }
   });
 });
