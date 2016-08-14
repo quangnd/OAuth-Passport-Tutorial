@@ -1,23 +1,23 @@
 # Intro
 
-Open Authentication
+### Open Authentication
 
 My Application ==> ? Who are you ? Tell them who I am => Google
 My Application <== This guy is quangnd <== Google
 
-Authorization
+### Authorization
 
 My App => Let me see your tweets => Let's them see my tweets => Twitter
 My App <== Here is a token to get to his tweet <== Twitter
 
-Tokens
+### Tokens
 
 My App ==>  1A2B3C4D ==> Twitter
 
 (Why not username & password??? Why use token? )
 (For example: you are only accessed only one of four properties of Twitter: Profile, Tweets, Post, Followers - not at all; so you will be provided a token key for one service)
 
-Passport (Insta, FB, Google, Twitter...)
+### Passport (Insta, FB, Google, Twitter...)
 
 ==
 # Demo App
