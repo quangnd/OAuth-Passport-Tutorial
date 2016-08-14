@@ -68,3 +68,8 @@ Use express-generator to generate App
 
 ## Calling OAuth Providers 
   - Save user to MongoDB
+  - Install OAuth module 
+  - Consuming FB Service use FB Graph API (see services/facebook.js)
+    - Get profile pictue API(https://developers.facebook.com/docs/graph-api/reference/user/picture/).
+    - Get friends API, need change FB scope at auth.js (scope: ['email', 'user_friends'])
+  - Consuming Twitter API 
