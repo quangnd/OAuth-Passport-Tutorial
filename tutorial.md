@@ -35,7 +35,8 @@ Use express-generator to generate App
 3. Google OAuth strategy (see google.strategy.js)
   - var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 
-  `passport.use(new GoogleStrategy({
+  `
+  passport.use(new GoogleStrategy({
     clientID: '358160442875-m0802l6ind6lmkvife4kc7hmhl88rl7a.apps.googleusercontent.com',
     clientSecret: '8oTkQKOaxnYPUmIt-wOlRpD-',
     callbackURL: 'http://localhost:3000/auth/google/callback'
@@ -43,7 +44,8 @@ Use express-generator to generate App
     function (req, accessToken, refreshToken, profile, done) {
       done(null, profile);
     }
-  ));`
+  ));
+  `
 
 4. Use Google profile data
 
@@ -51,7 +53,6 @@ Use express-generator to generate App
 1. Code structure
   - Create new config folder that contains passport config
 2. Use passport to secure routes
-  - 
 3. Twitter integration (https://apps.twitter.com)
   - Install module: passport-twitter (see twitter.strategy.js)
   - **Note**: If callbackURL is not assigned clearly, your app will use Callback url that declared in dev.twitter.com)
@@ -72,4 +73,5 @@ Use express-generator to generate App
   - Consuming FB Service use FB Graph API (see services/facebook.js)
     - Get profile pictue API(https://developers.facebook.com/docs/graph-api/reference/user/picture/).
     - Get friends API, need change FB scope at auth.js (scope: ['email', 'user_friends'])
-  - Consuming Twitter API 
+  - Consuming Twitter API  (https://dev.twitter.com/rest/reference/get/statuses/user_timeline)
+    -
